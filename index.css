@@ -1,0 +1,38 @@
+body{
+    background-color: lightgray;
+}
+
+.apointment-button{
+    background-color: #00F2FF;
+    width: 252px;
+    height: 50px;
+    border-radius: 8px;
+    border-color: #00F2FF;
+    font-size: 1em;
+}
+
+#doctors{
+    margin: 10px;
+    padding: 10px;
+    border: solid #00F2FF;
+    border-radius: 10px;
+}
+
+.table{
+    border-bottom: solid black;
+}
+
+
+
+.right{
+    float: right;
+}
+
+#space{
+    padding-bottom: 10px;
+}
+
+#space2{
+    padding-bottom: 30px;
+
+}
