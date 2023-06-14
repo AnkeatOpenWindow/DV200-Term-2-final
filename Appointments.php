@@ -12,13 +12,14 @@
     
     <div class="container">
       <h1>Book appointment</h1>
-      <form>
+      <form id="myform" action="Receptionists/create.php" method="POST">
         <!-- 2 column grid layout with text inputs for the first and last names -->
         <div class="row mb-4">
           <div class="col">
             <div class="form-outline">
-              <input type="text" id="form6Example1" class="form-control" />
               <label class="form-label" for="form6Example1">First name</label>
+              <input type="text" id="form6Example1" class="form-control" />
+              
             </div>
           </div>
           <div class="col">

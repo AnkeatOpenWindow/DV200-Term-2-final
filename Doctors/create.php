@@ -1,14 +1,14 @@
 <?php
 
-    include 'db.php';
+    include '../db.php';
     //Show a list of all Doctors records
-    $profileimage = $_POST['profile image'];
+    $profileimage = $_POST['profileimage'];
     $name = $_POST['name'];
     $surname = $_POST['surname'];
     $age = $_POST['age'];
     $gender = $_POST['gender'];
     $email = $_POST['email'];
-    $phone_number = $_POST['phone-number'];
+    $phonenumber = $_POST['phonenumber'];
     $specialization = $_POST['specialization'];
     $room = $_POST['room'];
     
@@ -19,10 +19,11 @@
         header("Location: Doctors.php");
     };
     
-    $sql = "INSERT INTO doctors (profile image, name, surname, age, gender, email, phone-number, specialization, room) VALUES ('$profileimage','$name', '$surname', '$age', '$gender', '$email', '$phone_number', '$specialization', '$room')";
+    $sql = "INSERT INTO doctors (profileimage, name, surname, age, gender, email, phonenumber, specialization, room) VALUES ('$profileimage','$name', '$surname', '$age', '$gender', '$email', '$phonenumber', '$specialization', '$room')";
     
     $conn->query($sql);
     $conn->close();
-    header("location: Doctors.php");
+    header("location: ../Doctors.php");
 
 ?>
+

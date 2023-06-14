@@ -26,25 +26,23 @@
         <h1>Add new Patient</h1>
         <form id="myform" action="Patient/create.php" method="POST">
             <label for="profile image"><h5>Up load profile image:</h5></label>
-            <input type="file" class="form-control m-1" id="profile image" name="profile image"><br>
+            <input type="text" class="form-control m-1" id="profileimage" name="profileimage"><br>
             <label for="name"><h5>Name:</h5></label>
             <input type="text" class="form-control m-1" id="name" name="name"><br>
             <label for="name"><h5>Surname:</h5></label>
             <input type="text" class="form-control m-1" id="surname" name="surname"><br>
             <label for="name"><h5>Age</h5></label><br>
-            <input type="text" id="age" name="age"><br>
+            <input type="text" class="form-control m-1" id="age" name="age"><br>
             <label for="name"><h5>Gender:</h5></label>
             <input type="text" class="form-control m-1" id="gender" name="gender"><br>
             <label for="name"><h5>Email:</h5></label>
             <input type="text" class="form-control m-1" id="email" name="email"><br>
-            <label for="name"><h5>Role:</h5></label>
-            <input type="text" class="form-control m-1" id="role" name="role"><br>
             <label for="name"><h5>Phone number:</h5></label>
-            <input type="text" class="form-control m-1" id="phone_number" name="phone_number"><br>
+            <input type="text" class="form-control m-1" id="phonenumber" name="phonenumber"><br>
             <label for="name"><h5>Medical aid number:</h5></label>
-            <input type="text" class="form-control m-1" id="medical_aid_number" name="medical_aid_number"><br>
+            <input type="text" class="form-control m-1" id="medicalaidnumber" name="medicalaidnumber"><br>
             <label for="name"><h5>Previous appiontments:</h5></label>
-            <input type="text" class="form-control m-1" id="previous_appiontments" name="previous_appiontments"><br>
+            <input type="text" class="form-control m-1" id="previousappiontments" name="previousappiontments"><br>
             <button type="submit" class="btn btn-primary" >Add</button>
         </form>
 

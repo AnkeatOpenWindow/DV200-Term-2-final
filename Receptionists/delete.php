@@ -1,11 +1,11 @@
 <?php
-    include 'db.php';
+    include '../db.php';
     //Delete details of an Receptionists
     $id = $_GET['id'];
 
-    $sql = "DELETE FROM doctors WHERE id = $id";
+    $sql = "DELETE FROM receptionists WHERE id = $id";
 
     $conn->query($sql);
     $conn->close();
-    header("location: Receptionists.php");
+    header("location: ../Receptionists.php");
 ?>

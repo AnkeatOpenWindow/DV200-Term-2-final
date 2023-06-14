@@ -1,5 +1,5 @@
 <?php
-    include 'db.php';
+    include '../db.php';
     //Delete details of an Patients
     $id = $_GET['id'];
 
@@ -7,5 +7,5 @@
 
     $conn->query($sql);
     $conn->close();
-    header("location: Patients.php");
+    header("location: ../Patients.php");
 ?>

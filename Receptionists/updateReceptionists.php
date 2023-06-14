@@ -1,7 +1,7 @@
 <?php
-
     include '../db.php';
-    //Show a list of all Receptionists records
+   //Edit details of an Receptionist - All attributes should be editable except the ID Number
+    $id = $_POST['id'];
     $profileimage = $_POST['profileimage'];
     $name = $_POST['name'];
     $surname = $_POST['surname'];
@@ -12,12 +12,10 @@
     $phonenumber = $_POST['phonenumber'];
     $rank = $_POST['rank'];
     
-    //An attempted to try and up load images but i'm stugeling to understand how.
-        
-    $sql = "INSERT INTO receptionists (profileimage, name, surname, age, gender, email, password, phonenumber, rank) VALUES ('$profileimage','$name', '$surname', '$age', '$gender', '$email', '$password','$phonenumber', '$rank')";
-    
-    $conn->query($sql);
+
+    $sql = "UPDATE receptionists SET profileimage='$profileimage', surname= '$surname', name='$name', age='$age', gender='$gender', email='$email', password='$password', phonenumber='$phonenumber' ,  rank='$rank' WHERE id='$id'";
+
+    $result = $conn->query($sql);
     $conn->close();
     header("location: ../Receptionists.php");
-
 ?>
