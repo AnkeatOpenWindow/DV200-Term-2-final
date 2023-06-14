@@ -16,10 +16,6 @@
             Warning: Undefined array key "id" in C:\xampp\htdocs\DV200final\Patients\read.php on line 10
 
             Warning: Undefined array key "id" in C:\xampp\htdocs\DV200final\Patients\read.php on line 10
-
-            Warning: Undefined array key "id" in C:\xampp\htdocs\DV200final\Patients\read.php on line 23
-
-            Warning: Undefined array key "id" in C:\xampp\htdocs\DV200final\Patients\read.php on line 39
             -->
 
         <tbody>

@@ -12,13 +12,11 @@
     <div class="container">
         <table class="table">
             <!-- ii get the warning
-            Warning: Undefined array key "id" in C:\xampp\htdocs\DV200final\Patients\read.php on line 10
+            Warning: Undefined array key "id" in C:\xampp\htdocs\DV200final\Doctors\read.php on line 10
 
-            Warning: Undefined array key "id" in C:\xampp\htdocs\DV200final\Patients\read.php on line 10
+            Warning: Undefined array key "id" in C:\xampp\htdocs\DV200final\Doctors\read.php on line 10
 
-            Warning: Undefined array key "id" in C:\xampp\htdocs\DV200final\Patients\read.php on line 23
-
-            Warning: Undefined array key "id" in C:\xampp\htdocs\DV200final\Patients\read.php on line 39
+            Warning: Undefined array key "id" in C:\xampp\htdocs\DV200final\Doctors\read.php on line 10
             -->
 
             <tbody>
