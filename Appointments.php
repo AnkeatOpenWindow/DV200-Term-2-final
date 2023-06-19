@@ -23,7 +23,7 @@
 
         <div class="form-outline mb-4">
           <label class="form-label" for="date">Date</label>
-          <input type="date" name="date" class="form-control" />
+          <input type="date" name="date" class="form-control"/>
         </div>
 
         <div class="form-outline mb-4">

@@ -27,12 +27,12 @@
                         technology, and compassionate approach make us a leader <br>
                         in the healthcare industry
                     </h4>
+                    <a href="Appointments.php">
+                        <button type="button" class ="btn btn-outline-secondary" >
+                            <h5>Appointments</h5>
+                        </button>
+                    </a>
                 </div>
-                <a href="Appointments.php">
-                    <button class ="apointment-button" >
-                        Appointments
-                    </button>
-                </a>
             </div>
             <div class="doctors">
                 <h1 id="space">Meet some of our specialists</h1>
