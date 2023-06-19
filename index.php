@@ -28,12 +28,14 @@
                         in the healthcare industry
                     </h4>
                 </div>
-                <button class ="apointment-button">
-                    <a href="Appointments.php">Appointments</a>
-                </button>
+                <a href="Appointments.php">
+                    <button class ="apointment-button" >
+                        Appointments
+                    </button>
+                </a>
             </div>
             <div class="doctors">
-                <h1 id="space">Meet our specialists</h1>
+                <h1 id="space">Meet some of our specialists</h1>
                 <div class="container">
                     <div class="row" >
                         <div class="col text-center" id="doctors">

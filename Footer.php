@@ -34,7 +34,7 @@
           <!-- Links -->
           <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
           <p>
-            <i class="fas fa-home me-3 text-secondary"></i> Campus: John Vorster Drive Ext. East, Southdowns, Irene
+            <i class="fas fa-home me-3 text-secondary"></i> John Vorster Drive Ext. East, Southdowns, Irene
           </p>
           <p>
             <i class="fas fa-envelope me-3 text-secondary"></i>

@@ -18,8 +18,8 @@
             Warning: Undefined array key "id" in C:\xampp\htdocs\DV200final\Patients\read.php on line 10
             -->
 
-        <tbody>
-            <?php include 'Patients/read.php'; ?>
+            <tbody>
+                <?php include 'Patients/read.php'; ?>
             </tbody>
         </table>
         

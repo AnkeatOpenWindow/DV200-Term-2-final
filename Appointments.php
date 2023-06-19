@@ -9,63 +9,74 @@
   </head>
 <body>
     <?php include 'Navbar.php' ?>
+    <?php include 'db.php' ?>
     
     <div class="container">
       <h1>Book appointment</h1>
-      <form id="myform" action="Receptionists/create.php" method="POST">
-        <!-- 2 column grid layout with text inputs for the first and last names -->
-        <div class="row mb-4">
-          <div class="col">
-            <div class="form-outline">
-              <label class="form-label" for="form6Example1">First name</label>
-              <input type="text" id="form6Example1" class="form-control" />
-              
-            </div>
-          </div>
-          <div class="col">
-            <div class="form-outline">
-              <input type="text" id="form6Example2" class="form-control" />
-              <label class="form-label" for="form6Example2">Last name</label>
-            </div>
-          </div>
-        </div>
+      <form id="myform" action="creatappiontment.php" method="POST">
+      <?php if (isset($_GET['success'])) { ?>
 
-        <!-- Text input -->
+        <b><p class="successmessage">
+
+          <?php echo $_GET['success']; ?></p></b>
+        <?php } ?>
+
         <div class="form-outline mb-4">
-          <input type="text" id="form6Example3" class="form-control" />
-          <label class="form-label" for="form6Example3">Doctor name</label>
+          <label class="form-label" for="date">Date</label>
+          <input type="date" name="date" class="form-control" />
         </div>
 
-        <!-- Text input -->
         <div class="form-outline mb-4">
-          <input type="text" id="form6Example4" class="form-control" />
-          <label class="form-label" for="form6Example4">Date</label>
+              <label class="form-label" for="form6Example2">Doctor</label>
+              <?php
+                echo '<select name="doctor" class="form-control">';
+                $sqlD = "SELECT name, surname, id FROM doctors ORDER BY name ASC";
+                $resultD = $conn->query($sqlD);
+                  
+                while ($rowD = $resultD->fetch_assoc()) {
+                  echo '<option name="doctor" value="' . $rowD['id'] . '"> ' . $rowD['name'] . ' ' . $rowD['surname'] . '</option>';
+                }
+          
+                echo '</select>';
+              ?>
         </div>
 
-        <!-- Email input -->
         <div class="form-outline mb-4">
-          <input type="email" id="form6Example5" class="form-control" />
-          <label class="form-label" for="form6Example5">Time</label>
+          <label class="form-label" for="form6Example3">Patient</label>
+          <?php
+              echo '<select name="patient" class="form-control">';
+              $sqlD = "SELECT name, surname, id FROM patients ORDER BY surname ASC";
+              $resultD = $conn->query($sqlD);
+
+              while ($rowD = $resultD->fetch_assoc()) {
+              echo '<option name="patient" value="' . $rowD['id'] . '"> ' . $rowD['name'] . ' ' . $rowD['surname'] . '</option>';
+              }
+          
+              echo '</select>';
+              ?>
         </div>
 
-        <!-- Number input -->
         <div class="form-outline mb-4">
-          <input type="number" id="form6Example6" class="form-control" />
-          <label class="form-label" for="form6Example6">Room</label>
+          <label class="form-label" for="time">Time</label>
+          <input type="time" name="time" class="form-control" />
         </div>
 
-        <!-- Message input -->
-        <div class="form-outline mb-4">
-          <textarea class="form-control" id="form6Example7" rows="4"></textarea>
-          <label class="form-label" for="form6Example7">Additional information</label>
-        </div>
-
-        <!-- Submit button -->
-        <button type="submit" class="apointment-button btn-block mb-4">Book appointment</button>
+        <button type="submit" class="btn btn-primary">Book appointment</button>
       </form>
+      <table class="table">
+            <!-- i get the warning
+            Warning: Undefined array key "id" in C:\xampp\htdocs\DV200final\Doctors\read.php on line 10
+
+            Warning: Undefined array key "id" in C:\xampp\htdocs\DV200final\Doctors\read.php on line 10
+
+            Warning: Undefined array key "id" in C:\xampp\htdocs\DV200final\Doctors\read.php on line 10
+            -->
+            <tbody>
+            <?php include 'Appointment\readappointment.php'; ?>
+            </tbody>
+        </table>
     </div>
 
-    
     <?php include 'Footer.php' ?>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 </body>

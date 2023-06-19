@@ -11,14 +11,13 @@
 <?php include 'Navbar.php' ?>
     <div class="container">
         <table class="table">
-            <!-- ii get the warning
+            <!-- i get the warning
             Warning: Undefined array key "id" in C:\xampp\htdocs\DV200final\Doctors\read.php on line 10
 
             Warning: Undefined array key "id" in C:\xampp\htdocs\DV200final\Doctors\read.php on line 10
 
             Warning: Undefined array key "id" in C:\xampp\htdocs\DV200final\Doctors\read.php on line 10
             -->
-
             <tbody>
             <?php include 'Doctors/read.php'; ?>
             </tbody>
