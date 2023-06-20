@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Appointments</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-    <link rel="stylesheet" href="index.css">
+    
   </head>
 <body>
     <?php include 'Navbar.php' ?>
     <?php include 'db.php' ?>
     
     <div class="container">
-      <h1>Book appointment</h1>
+      <h1>Book an appointment</h1>
       <form id="myform" action="creatappiontment.php" method="POST">
       <?php if (isset($_GET['success'])) { ?>
 
@@ -30,7 +30,7 @@
               <label class="form-label" for="form6Example2">Doctor</label>
               <?php
                 echo '<select name="doctor" class="form-control">';
-                $sqlD = "SELECT name, surname, id FROM doctors ORDER BY name ASC";
+                $sqlD = "SELECT name, surname, id FROM doctors ORDER BY surname ASC";
                 $resultD = $conn->query($sqlD);
                   
                 while ($rowD = $resultD->fetch_assoc()) {

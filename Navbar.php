@@ -23,16 +23,13 @@
                 <a class="nav-link" href="Receptionists.php">Receptionists</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="Doctors.php">Doctors Records</a>
+                <a class="nav-link" href="Doctors.php">Doctors</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="Patients.php">Patients Records</a>
+                <a class="nav-link" href="Patients.php">Patients</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="Appointments.php">Appointments</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="Profile.php">Profile</a>
             </li>
         </ul>
         <ul class="nav navbar-nav navbar-right">

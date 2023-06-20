@@ -11,7 +11,15 @@
             echo '<form class="form-inline m-2" action="../Appointment.php" method="POST">';
             echo '<td><input type="text" class="form-control" name="date" value="'.$row['date'].'"></td>';
             echo '<td><input type="text" class="form-control" name="time" value="'.$row['time'].'"></td>';
-            echo '<td><input type="text" class="form-control" name="doctor" value="'.$row['doctor'].'"></td>';
+            echo '<select name="doctor" class="form-control">';
+                $sqlD = "SELECT name, surname, id FROM doctors ORDER BY surname ASC";
+                $resultD = $conn->query($sqlD);
+                  
+                while ($rowD = $resultD->fetch_assoc()) {
+                  echo '<option name="doctor" value="' . $rowD['id'] . '"> ' . $rowD['name'] . ' ' . $rowD['surname'] . '</option>';
+                }
+          
+                echo '</select>';
             echo '<td><input type="text" class="form-control" name="patient" value="'.$row['patient'].'"></td>';
             echo '<td><button type="submit" class="btn btn-secondary">Save</button></td>';
 
@@ -20,15 +28,28 @@
         }else{
             echo "<td>" . $row['date'] . "</td>";
             echo "<td>" . $row['time'] . "</td>";
-            echo "<td>" . $row['doctor'] . "</td>";
-            echo "<td>" . $row['patient'] . "</td>";
+            $doc = $row['doctor'];
+            $sql1 = "SELECT name, surname FROM doctors WHERE id = $doc";
+            $result1 = $conn->query($sql1);
+            while ($rowD = $result1->fetch_assoc()) {
+                echo "<td>" . $rowD['name']." ".$rowD['surname'] . "</td>";
+              }
+            
+            $patient = $row['patient'];
+            $sql2 = "SELECT name, surname FROM patients WHERE id = $patient";
+            $result2 = $conn->query($sql2);
+            while ($rowD = $result2->fetch_assoc()) {
+                echo "<td>" . $rowD['name']." ".$rowD['surname'] . "</td>";
+              }
+
             echo '<td><a class="btn btn-primary" href="../Appointments.php?id=' . $row['id'] . '" role="button">Update</a></td>';//EDIT
         }
         
-        echo '<td><a class="btn btn-danger" href="Appointment/deleteappointment.php?id=' . $row['id'] . '" role="button">Delete</a></td>';//UPDATE
+        echo '<td><a class="btn btn-danger" href="deleteappointment.php?id=' . $row['id'] . '" role="button">Delete</a></td>';//UPDATE
         echo "</tr>";
     }
 
     $conn->close();
 
 ?>
+

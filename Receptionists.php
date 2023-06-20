@@ -5,20 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Receptionists</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-    <link rel="stylesheet" href="index.css">
+    
   </head>
 <body>
 <?php include 'Navbar.php' ?>
-    <div class="container">
-        <table class="table">
-            <!-- ii get the warning
-            Warning: Undefined array key "id" in C:\xampp\htdocs\DV200final\Receptionists\read.php on line 10      
-            -->
-            <tbody>
-            <?php include 'Receptionists/read.php'; ?>
-            </tbody>
-        </table>
-        
+    <div class="container">       
         <h1>Add new Receptionist</h1>
         <form id="myform" action="Receptionists/create.php" method="POST">
             <label for="profile image"><h5>Upload profile image:</h5></label>
@@ -41,7 +32,14 @@
             <input type="text" class="form-control m-1" id="rank" name="rank"><br>
             <button type="submit" class="btn btn-primary" >Add</button>
         </form>
-
+        <table class="table">
+            <!-- ii get the warning
+            Warning: Undefined array key "id" in C:\xampp\htdocs\DV200final\Receptionists\read.php on line 10      
+            -->
+            <tbody>
+            <?php include 'Receptionists/read.php'; ?>
+            </tbody>
+        </table>
     </div>
     
     

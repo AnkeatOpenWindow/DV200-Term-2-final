@@ -6,13 +6,17 @@ body {
 	flex-direction: column;
 }
 
-.login {
+*{
+	font-family: sans-serif;
+	box-sizing: border-box;
+}
+
+form {
 	width: 500px;
-	border: 2px solid black;
+	border: 2px solid #ccc;
 	padding: 30px;
 	background: #fff;
 	border-radius: 15px;
-    align-items: center;
 }
 
 h2 {
@@ -55,6 +59,11 @@ button:hover{
    margin: 20px auto;
 }
 
+h1 {
+	text-align: center;
+	color: #fff;
+}
+
 a {
 	float: right;
 	background: #555;
@@ -67,37 +76,4 @@ a {
 }
 a:hover{
 	opacity: .7;
-}
-
-.apointment-button{
-    width: 600px;
-    height: 50px;
-    border-radius: 8px;
-    font-size: 1em;
-}
-
-#doctors{
-    margin: 10px;
-    padding: 10px;
-    border: solid #00F2FF;
-    border-radius: 10px;
-}
-
-.table{
-    border-bottom: solid black;
-}
-
-
-
-.right{
-    float: right;
-}
-
-#space{
-    padding-bottom: 10px;
-}
-
-#space2{
-    padding-bottom: 30px;
-
 }

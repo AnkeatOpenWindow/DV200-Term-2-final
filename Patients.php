@@ -3,26 +3,14 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Patients Records</title>
+    <title>Patients</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-    <link rel="stylesheet" href="index.css">
+    
 </head>
 <body>
     
     <?php include 'Navbar.php' ?>
     <div class="container">
-        <table class="table">
-            <!-- ii get the warning
-            Warning: Undefined array key "id" in C:\xampp\htdocs\DV200final\Patients\read.php on line 10
-
-            Warning: Undefined array key "id" in C:\xampp\htdocs\DV200final\Patients\read.php on line 10
-            -->
-
-            <tbody>
-                <?php include 'Patients/read.php'; ?>
-            </tbody>
-        </table>
-        
         <h1>Add new Patient</h1>
         <form id="myform" action="Patient/create.php" method="POST">
             <label for="profile image"><h5>Up load profile image:</h5></label>
@@ -45,7 +33,17 @@
             <input type="text" class="form-control m-1" id="previousappiontments" name="previousappiontments"><br>
             <button type="submit" class="btn btn-primary" >Add</button>
         </form>
+        <table class="table">
+            <!-- ii get the warning
+            Warning: Undefined array key "id" in C:\xampp\htdocs\DV200final\Patients\read.php on line 10
 
+            Warning: Undefined array key "id" in C:\xampp\htdocs\DV200final\Patients\read.php on line 10
+            -->
+
+            <tbody>
+                <?php include 'Patients/read.php'; ?>
+            </tbody>
+        </table>
     </div>
     
     
