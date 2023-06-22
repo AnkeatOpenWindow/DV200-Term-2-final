@@ -71,6 +71,16 @@
 
             Warning: Undefined array key "id" in C:\xampp\htdocs\DV200final\Doctors\read.php on line 10
             -->
+            <thead >
+              <tr>
+                <th scope="col">Date</th>
+                <th scope="col">Time</th>
+                <th scope="col">Doctor</th>
+                <th scope="col">Patient</th>
+                <th scope="col">Edit</th>
+                <th scope="col">Delete</th>
+              </tr>
+            </thead>
             <tbody>
             <?php include 'Appointment\readappointment.php'; ?>
             </tbody>

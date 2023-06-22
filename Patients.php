@@ -39,7 +39,21 @@
 
             Warning: Undefined array key "id" in C:\xampp\htdocs\DV200final\Patients\read.php on line 10
             -->
-
+            <thead class="thead-dark">
+              <tr>
+                <th scope="col">Profile image</th>
+                <th scope="col">Name</th>
+                <th scope="col">Suranme</th>
+                <th scope="col">Age</th>
+                <th scope="col">Gender</th>
+                <th scope="col">E-mail</th>
+                <th scope="col">Phone number</th>
+                <th scope="col">Medical aid number</th>
+                <th scope="col">Previous Appiontments</th>
+                <th scope="col">Edit</th>
+                <th scope="col">Delete</th>
+              </tr>
+            </thead>
             <tbody>
                 <?php include 'Patients/read.php'; ?>
             </tbody>

@@ -36,6 +36,21 @@
             <!-- ii get the warning
             Warning: Undefined array key "id" in C:\xampp\htdocs\DV200final\Receptionists\read.php on line 10      
             -->
+            <thead>
+              <tr>
+                <th scope="col">Profile image</th>
+                <th scope="col">Name</th>
+                <th scope="col">Suranme</th>
+                <th scope="col">Age</th>
+                <th scope="col">Gender</th>
+                <th scope="col">E-mail</th>
+                <th scope="col">Password</th>
+                <th scope="col">Phone number</th>
+                <th scope="col">Previous Rank</th>
+                <th scope="col">Edit</th>
+                <th scope="col">Delete</th>
+              </tr>
+            </thead>
             <tbody>
             <?php include 'Receptionists/read.php'; ?>
             </tbody>

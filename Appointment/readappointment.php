@@ -9,8 +9,8 @@
         echo "<tr>";
         if ($row['id'] == $_GET['id']){
             echo '<form class="form-inline m-2" action="../Appointment.php" method="POST">';
-            echo '<td><input type="text" class="form-control" name="date" value="'.$row['date'].'"></td>';
-            echo '<td><input type="text" class="form-control" name="time" value="'.$row['time'].'"></td>';
+            echo '<td><input type="date" class="form-control" name="date" value="'.$row['date'].'"></td>';
+            echo '<td><input type="time" class="form-control" name="time" value="'.$row['time'].'"></td>';
             echo '<select name="doctor" class="form-control">';
                 $sqlD = "SELECT name, surname, id FROM doctors ORDER BY surname ASC";
                 $resultD = $conn->query($sqlD);
@@ -45,7 +45,7 @@
             echo '<td><a class="btn btn-primary" href="../Appointments.php?id=' . $row['id'] . '" role="button">Update</a></td>';//EDIT
         }
         
-        echo '<td><a class="btn btn-danger" href="deleteappointment.php?id=' . $row['id'] . '" role="button">Delete</a></td>';//UPDATE
+        echo '<td><a class="btn btn-danger" href="deleteappointment.php?id=' . $row['id'] . '" role="button">Delete</a></td>';//DELETE
         echo "</tr>";
     }
 

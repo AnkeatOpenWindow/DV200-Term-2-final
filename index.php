@@ -18,7 +18,7 @@
                             Brighter and Healthy Future
                         </h1>
                         <h4 class="card-text" id="space2">
-                            At our hospital, we are dedicated to providing exceptional <br>
+                            At our clinic, we are dedicated to providing exceptional <br>
                             medical care to our patients and their needs.<br> 
                             Our experienced team of medical professionals, cutting-edge <br>
                             technology, and compassionate approach make us a leader <br>
@@ -26,7 +26,7 @@
                         </h4>
                         <a href="Appointments.php">
                             <button type="button" class ="btn btn-outline-secondary" >
-                                <h5>Appointments</h5>
+                                <h5>Book appointment</h5>
                             </button>
                         </a>
                     </div>
@@ -37,9 +37,34 @@
                     </div>
                 </div>
             </div>
+            <div class="container">
+                <table class="table">
+                <h1 id="space">Appointments</h1>
+                    <!-- i get the warning
+                    Warning: Undefined array key "id" in C:\xampp\htdocs\DV200final\Doctors\read.php on line 10
+
+                    Warning: Undefined array key "id" in C:\xampp\htdocs\DV200final\Doctors\read.php on line 10
+
+                    Warning: Undefined array key "id" in C:\xampp\htdocs\DV200final\Doctors\read.php on line 10
+                    -->
+                        <thead class="thead-light">
+                            <tr>
+                                <th scope="col">Date</th>
+                                <th scope="col">Time</th>
+                                <th scope="col">Doctor</th>
+                                <th scope="col">Patient</th>
+                                <th scope="col">Edit</th>
+                                <th scope="col">Delete</th>
+                            </tr>
+                        </thead>
+                    <tbody>
+                    <?php include 'Appointment\readappointment.php'; ?>
+                    </tbody>
+                </table>
+            </div>
 
 
-            <div class="container text-center">
+            <div class="container">
                 <h1 id="space">Meet some of our specialists</h1>
                 <div class="row g-3">
                     <div class="col-4">
