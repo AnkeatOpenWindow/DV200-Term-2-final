@@ -18,7 +18,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['name'])) {
     <?php include 'Navbar.php' ?>
     <div class="container">
         <h1>Add new Patient</h1>
-        <form id="myform" action="Patient/create.php" method="POST">
+        <form id="myform" action="Patients/create.php" method="POST">
             <label for="profile image"><h5>Up load profile image:</h5></label>
             <input type="text" class="form-control m-1" id="profileimage" name="profileimage"><br>
             <label for="name"><h5>Name:</h5></label>

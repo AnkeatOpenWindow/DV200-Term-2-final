@@ -1,5 +1,4 @@
 <?php
-
     include '../db.php';
     //Show a list of all patients records
     $profileimage = $_POST['profileimage'];

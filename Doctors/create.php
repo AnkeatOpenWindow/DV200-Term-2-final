@@ -1,5 +1,4 @@
 <?php
-
     include '../db.php';
     //Show a list of all Doctors records
     $profileimage = $_POST['profileimage'];
@@ -13,12 +12,6 @@
     $room = $_POST['room'];
     
     //An attempted to try and up load images but i'm stugeling to understand how.
-    if (isset($_POST['submit'])&& isset($_FILES['picture'])) {
-        echo "hello";
-    }else {
-        header("Location: Doctors.php");
-    };
-    
     $sql = "INSERT INTO doctors (profileimage, name, surname, age, gender, email, phonenumber, specialization, room) VALUES ('$profileimage','$name', '$surname', '$age', '$gender', '$email', '$phonenumber', '$specialization', '$room')";
     
     $conn->query($sql);
