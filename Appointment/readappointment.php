@@ -18,7 +18,7 @@
                 while ($rowD = $resultD->fetch_assoc()) {
                   echo '<option name="doctor" value="' . $rowD['id'] . '"> ' . $rowD['name'] . ' ' . $rowD['surname'] . '</option>';
                 }
-          
+                
                 echo '</select>';
             echo '<td><input type="text" class="form-control" name="patient" value="'.$row['patient'].'"></td>';
             echo '<td><button type="submit" class="btn btn-secondary">Save</button></td>';

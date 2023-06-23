@@ -34,7 +34,7 @@
         </ul>
         <ul class="nav navbar-nav navbar-right">
             <!--Add name of Login-->
-            <li><a href="#"><span class="glyphicon glyphicon-user"></span> Welcome</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-user"></span> Welcome <?php echo $_SESSION['name']; ?></a></li>
             <li><a href="logout.php"><span class="glyphicon glyphicon-log-in"></span> Log-out</a></li>
         </ul>
     </div>
