@@ -21,11 +21,11 @@ View, Update and delete information of a Doctor, Patient and receptionists. As w
 Creating a website that shows data about Doctor, Patient and Receptionist.
 ## Wireframer
 <!-- Images-->
-<img src="src/images/Home.jpg" width="100">
-<img src="src/images/Doctors.jpg" width="100">
-<img src="src/images/Patiernts.jpg" width="100">
-<img src="src/images/Receptionists.jpg" width="100">
-<img src="src/images/Appointments.jpg" width="100">
+<img src="images/Home.jpg" width="100">
+<img src="images/Doctors.jpg" width="100">
+<img src="images/Patients.jpg" width="100">
+<img src="images/Receptionists.jpg" width="100">
+<img src="images/Appointments.jpg" width="100">
 
 # Development Process
 ## Implementation Process
