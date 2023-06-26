@@ -40,14 +40,15 @@ Learning the new code using php and insure it works without problems.
 # Final Outcome
 ## Mockups
 <!-- Images-->
-<img src="images/Landing1.jpg" width="100">
-<img src="images/Landing2.jpg" width="100">
-<img src="images/Landing3.jpg" width="100">
-<img src="images/Compare1.jpg" width="100">
-<img src="images/Compare2.jpg" width="100">
-<img src="images/Comapare3.jpg" width="100">
-<img src="images/Timeline1.jpg" width="100">
-<img src="images/Timeline2.jpg" width="100">
+<img src="images/Mockup 9.jpg" width="100">
+<img src="images/Mockup 1.jpg" width="100">
+<img src="images/Mockup 2.jpg" width="100">
+<img src="images/Mockup 3.jpg" width="100">
+<img src="images/Mockup 4.jpg" width="100">
+<img src="images/Mockup 5.jpg" width="100">
+<img src="images/Mockup 6.jpg" width="100">
+<img src="images/Mockup 7.jpg" width="100">
+<img src="images/Mockup 8.jpg" width="100">
 
 <!-- Demo video is in the folder named demo_video-->
 
