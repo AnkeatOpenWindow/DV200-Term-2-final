@@ -12,5 +12,5 @@
 
     $result = $conn->query($sql);
     $conn->close();
-    header("location: ../Appointments.php");
+    header("location: Appointments.php");
 ?>

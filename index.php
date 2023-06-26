@@ -65,7 +65,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['name'])) {
                             </tr>
                         </thead>
                     <tbody>
-                    <?php include 'Appointment\readappointment.php'; ?>
+                    <?php include 'readappointment.php'; ?>
                     </tbody>
                 </table>
             </div>
