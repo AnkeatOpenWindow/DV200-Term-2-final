@@ -7,9 +7,9 @@
     //Show a list of all employee records
     while($row = $result->fetch_assoc()) {
         echo "<tr>";
-        if ($row['id'] == $_GET['id']){
-            echo '<form class="form-inline m-2" action="Patients/updatePatients.php" method="POST">';
-            echo '<td><input type="text" class="form-control" name="profileimage" value="'.$row['profileimage'].'"></td>';
+        if (isset($_GET['id']) && $row['id'] == $_GET['id']){
+            echo '<form class="form-inline m-2" action="Patients/updatePatients.php" method="POST" enctype="multipart/form-data">';
+            echo '<td><input type="file" class="form-control" name="profileimage"></td>';
             echo '<td><input type="text" class="form-control" name="name" value="'.$row['name'].'"></td>';
             echo '<td><input type="text" class="form-control" name="surname" value="'.$row['surname'].'"></td>';
             echo '<td><input type="text" class="form-control" name="age" value="'.$row['age'].'"></td>';
@@ -24,7 +24,7 @@
             echo '</form>';
             
         }else{
-            echo "<td>" . $row['profileimage'] . "</td>";
+            echo "<td><img src='".$row['profileimage']."' alt='Profile Image' width='100'></td>";
             echo "<td>" . $row['name'] . "</td>";
             echo "<td>" . $row['surname'] . "</td>";
             echo "<td>" . $row['age'] . "</td>";

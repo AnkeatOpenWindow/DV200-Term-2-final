@@ -1,13 +1,14 @@
 <?php
+    error_reporting(E_ALL & ~E_NOTICE);
     include 'db.php';
 
     $sql = "SELECT * FROM apointment";
 
     $result = $conn->query($sql);
-    //Show a list of all appiontments records
+    //Show a list of all appointments records
     while($row = $result->fetch_assoc()) {
         echo "<tr>";
-        if ($row['id'] == $_GET['id']){
+        if (isset($_GET['id']) && $row['id'] == $_GET['id']){
             echo '<form class="form-inline m-2" action="updateapointment.php" method="POST">';
             echo '<td><input type="date" class="form-control" name="date" value="'.$row['date'].'"></td>';
             echo '<td><input type="time" class="form-control" name="time" value="'.$row['time'].'"></td>';
@@ -58,6 +59,4 @@
     }
 
     $conn->close();
-
 ?>
-
