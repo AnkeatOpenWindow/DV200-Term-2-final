@@ -86,7 +86,8 @@ Warning: Undefined array key "id" in C:\xampp\htdocs\DV200final\Receptionists\re
 
 
     <?php include 'Footer.php' ?>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      crossorigin="anonymous"></script>
   </body>
 
   </html>

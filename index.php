@@ -77,7 +77,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['name'])) {
                     <div class="col-4">
                         <div class="p-3 col text-center border border-info">
                             <h3>Dr. Derek Piano</h3>
-                            <img src="images\Doc1.jpg" width="200px" id="space">
+                            <img src="images\Derek.jpg" width="200px" id="space">
                             <p class="text-left">
                                         Hi. I'm Doctor Piano and I specialize in one's Wrists muscles
                             </p>
@@ -86,7 +86,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['name'])) {
                     <div class="col-4">
                         <div class="p-3 col text-center border border-info">
                             <h3>Dr. Calya Henry</h3>
-                            <img src="images\Doc2.jpg" width="350px"id="space">
+                            <img src="images\Calya.jpg" width="187px"id="space">
                             <p class="text-left">
                                 Hi. I'm Doctor Henry and I specialize in one's Back muscles
                             </p>
@@ -95,7 +95,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['name'])) {
                     <div class="col-4">
                         <div class="p-3 col text-center border border-info">
                             <h3>Dr. Maddy Smith</h3>
-                            <img src="images\Doc4.jpg" width="350px"id="space">
+                            <img src="images\Maddy.jpg" width="220px" id="space">
                             <p class="text-left">
                                 Hi. I'm Doctor Smith and I specialize in one's Neck muscles
                             </p>
@@ -104,7 +104,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['name'])) {
                     <div class="col-4">
                         <div class="p-3 col text-center border border-info">
                             <h3>Dr. Leo Dam</h3>
-                            <img src="images\Doc7.jpg" width="200px"id="space">
+                            <img src="images\Leo.jpg" width="200px"id="space">
                             <p class="text-left">
                                 Hi. I'm Doctor Dam and I specialize in one's Shoulders muscles
                             </p>
@@ -113,7 +113,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['name'])) {
                     <div class="col-4">
                         <div class="p-3 col text-center border border-info">
                             <h3>Dr. Gabby Whitmore</h3>
-                            <img src="images\Doc5.jpg" width="200px"id="space">
+                            <img src="images\Gabby.jpg" width="200px"id="space">
                             <p class="text-left">
                                 Hi. I'm Doctor Whitmore and I specialize in one's Wrists muscles
                             </p>
@@ -122,7 +122,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['name'])) {
                     <div class="col-4">
                         <div class="p-3 col text-center border border-info">
                             <h3>Dr. Jackie Xavier</h3>
-                            <img src="images\Doc6.jpg" width="200px"id="space">
+                            <img src="images\Jakkie.jpg" width="200px"id="space">
                             <p class="text-left">
                                 Hi. I'm Xavier Smith and I specialize in one's Neck muscles
                             </p>
@@ -131,7 +131,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['name'])) {
                     <div class="col-4">
                         <div class="p-3 col text-center border border-info">
                             <h3>Dr. Rian Seth</h3>
-                            <img src="images\Doc3.jpg" width="350px"id="space">
+                            <img src="images\Seth.jpg" width="200px"id="space">
                             <p class="text-left">
                                 Hi. I'm Doctor Smith and I specialize in one's Feet muscles
                             </p>
