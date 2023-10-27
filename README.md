@@ -50,7 +50,8 @@ Learning the new code using php and insure it works without problems.
 <img src="images/Mockup 7.jpg" width="100">
 <img src="images/Mockup 8.jpg" width="100">
 
-<!-- Demo video is in the folder named demo_video-->
+## Demo video
+https://drive.google.com/file/d/1O7Zykhc7UIc8ySQdmCvKFgqI2ndf-Bo8/view?usp=sharing
 
 # Conculsion
 Using php and Xamp I have create and website that shows, edit and delete data in the website which will be shows, edit and delete in the data base I have set up in Xamp.
