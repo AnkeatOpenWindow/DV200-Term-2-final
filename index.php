@@ -39,7 +39,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['name'])) {
                     </div>
                     <div class="col">
                     <div class="float-right">
-                            <img src="images\Doc1.jpg" width="300px">
+                            <img src="images\Derek.jpg" width="300px">
                         </div><br>
                     </div>
                 </div>

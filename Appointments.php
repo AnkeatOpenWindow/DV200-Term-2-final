@@ -20,12 +20,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['name'])) {
     <div class="container">
       <h1>Book an appointment</h1>
       <form id="myform"  action="creatappiontment.php" method="POST">
-      <?php if (isset($_GET['success'])) { ?>
-
-        <b><p class="successmessage">
-
-          <?php echo $_GET['success']; ?></p></b>
-        <?php } ?>
+      <?php if (isset($_GET['success']))  ?>
 
         <div class="form-outline mb-4">
           <label class="form-label" for="date">Date</label>
